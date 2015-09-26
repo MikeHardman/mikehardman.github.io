@@ -46,8 +46,9 @@ First a bit about me...
   - Source Control : Git
   - Environment : 
     - Visual Studio 2015
-    - ReSharper
-    - GhostDoc
+    - Solarized Dark Colour Scheme
+    - ReSharper 2015.2
+    - GhostDoc 4.9
     - ClaudiaIDE (Customised)
   - Keyboard / Mouse : Corsair K70 (Cherry MX Blue Switches) / Corsair M65 FPS
   - Monitor(s) :
