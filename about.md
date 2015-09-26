@@ -3,10 +3,6 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! Welcome to Mikes blog.
-</p>
-
 ## Personal Details
 
   I grew up with the most curious nature out of anyone I've ever met, and from what I can work out, anyone any of my teachers ever came across too.
