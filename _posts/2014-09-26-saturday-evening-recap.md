@@ -3,9 +3,9 @@ title: Saturday Stream Recap
 layout: post
 ---
 
-Music - Mostly Minimal Techno
-Mood - Confident & Relaxed
-Target - Move closer towards mobile integration
+Music - Mostly Minimal Techno  
+Mood - Confident & Relaxed  
+Target - Move closer towards mobile integration  
 
 Tonights stream saw me make some great progress fleshing out the first stages of the authentication mechanism I think we'll be using. I want to be able to encompass all of the various identity providers and keep it extensible, so I don't want my implementation to be tied specifically to any one provider.
 
