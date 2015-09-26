@@ -1,5 +1,5 @@
 ---
-title: The First Week
+title: The First Two Weeks
 layout: post
 ---
 
