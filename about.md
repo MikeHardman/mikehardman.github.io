@@ -3,6 +3,10 @@ layout: page
 title: About
 ---
 
+So first of all, thank you for checking out my blog. This is intended to be the dumping ground for all my thoughts and a log of the activites I'll be performing during the creation and hopeful operation of my pet project. It will almost certainly require every bit of knowledge and every ounce of skill I have aquired and honed over an already fruitful career in technology.
+
+First a bit about me...
+
 ## Personal Details
 
   I grew up with the most curious nature out of anyone I've ever met, and from what I can work out, anyone any of my teachers ever came across too.
@@ -50,8 +54,7 @@ title: About
     - Primary : Qnix 27" 1440p IPS
     - Secondaries : Asus 24" 1080p 
     - Mount : NewStar Desk Mount (Best... thing... EVER!)
-    
-  
+      
   
   
 
