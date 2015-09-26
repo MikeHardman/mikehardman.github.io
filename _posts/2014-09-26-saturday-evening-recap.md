@@ -3,7 +3,7 @@ title: Saturday Stream Recap
 layout: post
 ---
 
-Watch the recording on livecoding.tv [here] (https://www.livecoding.tv/video/developmental-banter-with-mike-10/)  
+Watch the recording on livecoding.tv [here](https://www.livecoding.tv/video/developmental-banter-with-mike-10/)  
 
 Music - Mostly Minimal Techno  
 Mood - Confident & Relaxed  
