@@ -19,10 +19,8 @@ title: About
   
   I listen to a lot of varied music when I code, from nice ambient, classical and chillstep to heavy metal, techno and drum & bass. Almost anything can go, but the music is very much driven by my current mood and the type of work I'm doing.
   
-  ```
   > If you stop moving forward, you start moving backwards. If you want to get ahead, you've got to hustle! - *No Idea*
-  ```
-
+  
 ## About the Project
 
   My pet project is called Presence, and its goal is to bring the power of the cloud to the humble doorbell.
