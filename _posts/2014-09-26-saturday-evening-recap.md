@@ -26,7 +26,7 @@ We'll be storing a bunch of OAuth 2.0 details against each of our "PersonGrain" 
     }
 {% endhighlight %}
 
-It's pretty straight forward, it contains the Guid of the "Person" we're interested in, an expiry data and a signature that we'll be computing in the back end to prevent easy tampering.
+It's pretty straight forward, it contains the Guid of the "Person" we're interested in, an expiry date and a signature that we'll be computing in the back end to prevent tampering.
 
 The code is nicely tested and is being excercised well by the tests, I've just got to look at a regression that I think I introduced over the week while messing with Grain persistence. Once that's fixed we'll have build number 24 green and out of the door. Woop!
 
