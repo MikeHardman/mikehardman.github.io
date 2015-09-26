@@ -18,6 +18,11 @@ sass:
   sass_dir:          _sass
   style:            :compressed
 
+pages_list:
+  About:            '/about'
+  Archive:          '/archive'
+  Feed:             '/atom.xml'
+
 # About/contact
 author:
   name:              Mark Otto
