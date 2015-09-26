@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-So first of all, thank you for checking out my blog. This is intended to be the dumping ground for all my thoughts and a log of the activites I'll be performing during the creation and hopeful operation of my pet project. It will almost certainly require every bit of knowledge and every ounce of skill I have aquired and honed over an already fruitful career in technology.
+So first of all, thank you for checking out my blog. This is intended to be the dumping ground for all my thoughts and a log of the activites I'll be performing during the creation and hopeful operation of my pet project. A project that will almost certainly require every bit of knowledge and every ounce of skill I have aquired and honed over an already fruitful career in technology.
 
 First a bit about me...
 
