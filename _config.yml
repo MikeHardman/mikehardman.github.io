@@ -6,7 +6,7 @@ relative_permalinks: true
 
 # Setup
 title:               MikeDoesCode
-tagline:             The Trials & Tribulations of a Senior Dev
+tagline:             Coder, Streamer, Blogger, Dreamer...
 url:                 http://mikehardman.github.io
 paginate:            1
 baseurl:             ""
@@ -25,11 +25,10 @@ pages_list:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Mike Hardman
+  url:               https://twitter.com/MikeDoesCode
+  email:             mike.hardman.work@gmail.com
 
 # Custom vars
 version:             2.0.0
-github:
-  repo:              https://github.com/poole/poole
+github:				 https://github.com/mikehardman/  
