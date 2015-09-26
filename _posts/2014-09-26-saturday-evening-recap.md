@@ -31,10 +31,10 @@ It's pretty straight forward, it contains the Guid of the "Person" we're interes
 
 The code is nicely tested and is being excercised well by the tests, I've just got to look at a regression that I think I introduced over the week while messing with Grain persistence. Once that's fixed we'll have build number 24 green and out of the door. Woop!
 
-Stream Stats:
- - Followers: 38 (+4)
- - View Count: 1107 (+106)
- - Peak Viewers: 23 (0)
+Stream Stats:  
+ - Followers: 38 (+4)  
+ - View Count: 1107 (+106)  
+ - Peak Viewers: 23 (0)  
  
  I was listed as the top featured streamer for this entire stream, I'm not sure why!
  

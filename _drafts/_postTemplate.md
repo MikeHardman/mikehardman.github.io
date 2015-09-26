@@ -3,7 +3,6 @@ title:
 layout: post
 ---
 
-
 Watch the recording on livecoding.tv [here](https://www.livecoding.tv/video/developmental-banter-with-mike-10/)  
 
 Stream Type - Developmental Banter  
@@ -15,10 +14,10 @@ Target - Move closer towards mobile integration
 
 
 
-Stream Stats:
- - Followers: ?? (+/- ??)
- - View Count: ?? (+/- ??)
- - Peak Viewers: ?? (+/- ??)
+Stream Stats:  
+ - Followers: ?? (+/- ??)  
+ - View Count: ?? (+/- ??)  
+ - Peak Viewers: ?? (+/- ??)  
 
 Thank you to everyone who tuned in!
 
