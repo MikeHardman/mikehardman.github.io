@@ -1,6 +1,7 @@
 ---
 title: Saturday Stream Recap
 layout: post
+comments: True
 ---
 
 Watch the recording on livecoding.tv [here](https://www.livecoding.tv/video/developmental-banter-with-mike-10/)  

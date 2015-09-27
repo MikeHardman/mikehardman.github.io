@@ -1,6 +1,7 @@
 ---
 title: The Obligatory First Post
 layout: post
+comments: True
 ---
 
 So here it is... My first professional blog.

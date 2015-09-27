@@ -1,6 +1,7 @@
 ---
 title: The First Two Weeks
 layout: post
+comments: True
 ---
 
 First a bit of background... I'll start back on Monday 14th September 2015, but to do that, we'll have to go back a tiny bit further. 
