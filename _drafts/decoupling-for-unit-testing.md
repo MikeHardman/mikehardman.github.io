@@ -9,49 +9,49 @@ Let's take the following (completely legitimate and real world ready) example:
 
 {% highlight csharp %}
 
-	public class ClassWithSingleDependency
+public class ClassWithSingleDependency
+{
+	IWorker _worker;
+	
+	public ClassWithSingleDependency()
 	{
-		IWorker _worker;
-		
-		public ClassWithSingleDependency()
-		{
-			_worker = new Worker();
-		}
-		
-		public string DoSomeWork(string input)
-		{
-			return worker.DoTheThing(input);
-		}
+		_worker = new Worker();
 	}
+	
+	public string DoSomeWork(string input)
+	{
+		return worker.DoTheThing(input);
+	}
+}
 {% endhighlight %}
 
 So despite being a pointless abstraction, there's something seriously wrong with the above code, particularly when it comes to testing. Let's make a new class that has two dependencies and lets see how we might go about testing it:
 
 {% highlight csharp %}
 	
-	public class ClassWithMultipleDependencies
+public class ClassWithMultipleDependencies
+{
+	IWorker _thisWayWorker;
+	IWorker _thatWayWorker;
+	
+	public ClassWithMultipleDependencies()
 	{
-		IWorker _thisWayWorker;
-		IWorker _thatWayWorker;
-		
-		public ClassWithMultipleDependencies()
-		{
-			_thisWayWorker = new ThisWayWorker();
-			_thatWayWorker = new ThatWayWorker();	
+		_thisWayWorker = new ThisWayWorker();
+		_thatWayWorker = new ThatWayWorker();	
+	}
+	
+	public string DoSomeConditionalWork(string condition, string input)
+	{
+		if(condition == "DO IT THIS WAY")
+		{				
+			return _thisWayWorker.DoTheThing(input);
 		}
-		
-		public string DoSomeConditionalWork(string condition, string input)
+		else
 		{
-			if(condition == "DO IT THIS WAY")
-			{				
-				return _thisWayWorker.DoTheThing(input);
-			}
-			else
-			{
-				return _thatWayWorker.DoTheThing(input);
-			}
+			return _thatWayWorker.DoTheThing(input);
 		}
 	}
+}
 
 {% endhighlight %}
 
@@ -61,21 +61,21 @@ So how should it look? Let's see the first one:
 
 {% highlight csharp %}
 
-	public class ClassWithSingleDependency
-	{		
-		IWorker _worker;
-		
-		public ClassWithSingleDependency(IWorker worker)
-		{
-			//initialise some variables, do some spin up work, etc.
-			_worker = worker;
-		}
-		
-		public string DoSomeWork(string input)
-		{
-			return _worker.DoTheThing(input);
-		}
+public class ClassWithSingleDependency
+{		
+	IWorker _worker;
+	
+	public ClassWithSingleDependency(IWorker worker)
+	{
+		//initialise some variables, do some spin up work, etc.
+		_worker = worker;
 	}
+	
+	public string DoSomeWork(string input)
+	{
+		return _worker.DoTheThing(input);
+	}
+}
 	
 {% endhighlight %}
 
@@ -85,21 +85,21 @@ So that was an easy example, let's have a look at how we go about de-coupling th
 
 {% highlight csharp %}
 
-	public class ClassWithMultipleDependencies
+public class ClassWithMultipleDependencies
+{
+	IWorkerFactory _workerFactory;		
+	
+	public ClassWithMultipleDependencies(IWorkerFactory workerFactory)
 	{
-		IWorkerFactory _workerFactory;		
-		
-		public ClassWithMultipleDependencies(IWorkerFactory workerFactory)
-		{
-			_workerFactory = workerFactory;	
-		}
-		
-		public string DoSomeConditionalWork(string condition, string input)
-		{
-			var worker = _workerFactory.Do(condition);
-			return worker.DoTheThing(input);			
-		}
+		_workerFactory = workerFactory;	
 	}
+	
+	public string DoSomeConditionalWork(string condition, string input)
+	{
+		var worker = _workerFactory.Do(condition);
+		return worker.DoTheThing(input);			
+	}
+}
 
 {% endhighlight %}
 
@@ -107,17 +107,17 @@ This is a much more significant change, and now the above example is no longer c
 
 {% highlight csharp %}
 
-	public class WorkerFactory : IWorkerFactory
+public class WorkerFactory : IWorkerFactory
+{
+	public IWorker Do(string condition)
 	{
-		public IWorker Do(string condition)
+		if(condition == "DO IT THIS WAY")
 		{
-			if(condition == "DO IT THIS WAY")
-			{
-				return new ThisWayWorker();
-			}
-			return new ThatWayWorker();
+			return new ThisWayWorker();
 		}
+		return new ThatWayWorker();
 	}
+}
 
 {% endhighlight %}
 
@@ -125,27 +125,30 @@ This is better, we can definitely unit test the original class now by providing 
 
 {% highlight csharp %}
 
-	public class ClassWithMultipleDependencies
+public class ClassWithMultipleDependencies
+{
+	Func<string, IWorker> _workerFactory;		
+	
+	public ClassWithMultipleDependencies(Func<string, IWorker> workerFactory)
 	{
-		Func<string, IWorker> _workerFactory;		
-		
-		public ClassWithMultipleDependencies(Func<string, IWorker> workerFactory)
-		{
-			_workerFactory = workerFactory;	
-		}
-		
-		public string DoSomeConditionalWork(string condition, string input)
-		{
-			var worker = _workerFactory(condition);			
-			return worker.DoTheThing(input);			
-		}
+		_workerFactory = workerFactory;	
 	}
+	
+	public string DoSomeConditionalWork(string condition, string input)
+	{
+		var worker = _workerFactory(condition);			
+		return worker.DoTheThing(input);			
+	}
+}
 	
 {% endhighlight %}
 
 And we define our factory function to be loaded into the DI container so it looks something like this:
 
 {% highlight csharp %}
+
+public class MappingModule
+{
 
 	public void LiveMappings()
 	{
@@ -156,16 +159,15 @@ And we define our factory function to be loaded into the DI container so it look
 	public void DependencyContainerBootstrap()
 	{
 		var factoryFunc = new Func<string, IWorker>( condition => {
-			
 			if(condition == "DO IT THIS WAY")
 			{	
 				return container.Resolve<IWorker>("thisWayWorker");
 			}
-			return container.Resolve<IWorker>("thatWayWorker");
-			
+			return container.Resolve<IWorker>("thatWayWorker");		
 		}); 
 		container.RegisterInstance(factoryFunc);
 	}
+}
 	
 {% endhighlight %}
 

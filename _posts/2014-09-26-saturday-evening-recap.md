@@ -19,12 +19,14 @@ So tonight, I created a few tests around the creation and verification of a pres
 We'll be storing a bunch of OAuth 2.0 details against each of our "PersonGrain" entities, but the bit the mobile application really needs is an IPresenceToken:
 
 {% highlight csharp %}
-    public interface IPresenceToken
-    {
-        Guid PersonGuid { get; }
-        DateTime ValidUntil { get; }
-        byte[] Signature { get; }
-    }
+
+public interface IPresenceToken
+{
+    Guid PersonGuid { get; }
+    DateTime ValidUntil { get; }
+    byte[] Signature { get; }
+}
+
 {% endhighlight %}
 
 It's pretty straight forward, it contains the Guid of the "Person" we're interested in, an expiry date and a signature that we'll be computing in the back end to prevent tampering.
