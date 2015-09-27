@@ -5,7 +5,7 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               MikeDoesCode
+title:               @MikeDoesCode
 tagline:             Coder, Streamer, Blogger, Dreamer...
 url:                 http://mikehardman.github.io
 paginate:            1
