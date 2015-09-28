@@ -20,8 +20,8 @@ Once I was comfortable with the service I started filling out the tests and ran 
 
 {% highlight csharp %}
 
-			var mockCondition = GetMock<IConditionGrain>();
-            mockCondition.Setup(c => c.SetOwner(It.IsAny<IPersonGrain>(), null)).Verifiable();
+var mockCondition = GetMock<IConditionGrain>();
+mockCondition.Setup(c => c.SetOwner(It.IsAny<IPersonGrain>(), null)).Verifiable();
             
 {% endhighlight %}
 
