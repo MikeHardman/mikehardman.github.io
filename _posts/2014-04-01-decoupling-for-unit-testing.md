@@ -1,7 +1,10 @@
 ---
 title: Decoupling Code to Facilitate Unit Testing 
 layout: post
+comments: True
 ---
+
+THIS IS A DRAFT POST FOR COMMENTARY!
 
 Something that I've run into many times when working on existing apps is the ammount (or lack thereof) of decoupling shown. Historically it's been a bit of a pain to properly decouple your code and still keep it managable, but the variety of dependency injection frameworks that exist now leaves almost no excuse. Since I've been using AutoFac more than anything in my latest project, I'll be writing this with the AutoFac calls in mind, but the same features are available in most of the containers available.
 
@@ -23,6 +26,7 @@ public class ClassWithSingleDependency
 		return worker.DoTheThing(input);
 	}
 }
+
 {% endhighlight %}
 
 So despite being a pointless abstraction, there's something seriously wrong with the above code, particularly when it comes to testing. Let's make a new class that has two dependencies and lets see how we might go about testing it:
