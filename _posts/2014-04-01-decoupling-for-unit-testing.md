@@ -2,6 +2,7 @@
 title: Decoupling Code to Facilitate Unit Testing 
 layout: post
 comments: True
+draft: True
 ---
 
 THIS IS A DRAFT POST FOR COMMENTARY!
