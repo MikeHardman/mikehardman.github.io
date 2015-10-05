@@ -19,7 +19,6 @@ On stream I got straight into creating a Katana web app and some extremely basic
 
 {% highlight csharp %}
 
-[assembly: OwinStartup(typeof(Presence.Web.OWIN.Startup))]
 namespace Presence.Web.OWIN
 {
     public class Startup
