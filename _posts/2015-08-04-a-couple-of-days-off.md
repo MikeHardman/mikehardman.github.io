@@ -1,5 +1,5 @@
 ---
-title: A Couple of Days Off and "Hello, World!"
+title: A Couple of Days Off and Hello World
 layout: post
 comments: True
 ---
