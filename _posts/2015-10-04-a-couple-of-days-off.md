@@ -41,9 +41,9 @@ It doesn't *do* anything yet, other than respond "Hello, world!" to any requests
 
 So I dove into my project and got what I think is the right integration point between the OWIN middlewear and the Orleans grains in order to communicate with my token based authentication model, but while investigating the notion of authentication in OWIN it looks like there's a much more complete implementation of the kind of authentication flow we actually want to implement with regards to the OAuth delegation for things like remotely querying peoples friends lists to check for doorbell permissions and possibly providing easier device and identity management than I could have implemented. So diving through the documentation and I haven't got a clear idea on how I'll be able to integrate with the OWIN authentication mechanism yet, so it's going to be another case of getting read up maybe do another dev spike specifically on this kind of authentication in Katana so I can get a clearer picture of how it will plug into the kind of authorisation rules I want to build in the Orleans back-end. My guess is I'm going to have to do a chunk of refactoring to the partially implemented authorisation model in the grains currently, and it may end up impacting the notion of "Ownership" which will unfortunately impact every one of the grains, however that will provide an ideal opportunity to attempt to introduce some composability into the grains for the shared implementation, I suppose we're supposed to be favouring composition over inheritance these days anyway right? Anway I'm rambling. 
 
-Big stream numbers tonight, thank you all so much! We blasted past 30 viewers and hit an all time peak of 32, so proud. I've hit the home page a couple of times now and the numbers are really kicking up!
+Big stream numbers tonight, thank you all so much! We blasted past 30 viewers and hit an all time peak of 36, so proud. I've hit the home page a couple of times now and the numbers are really kicking up!
 
 Stream Stats:  
  - Followers: 64 (+10)   
  - View Count: 1963 (+382)    
- - Peak Viewers: 32 (+8)  
+ - Peak Viewers: 36 (+12)  
