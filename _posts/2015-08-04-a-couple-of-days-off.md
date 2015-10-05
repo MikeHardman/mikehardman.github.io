@@ -4,6 +4,13 @@ layout: post
 comments: True
 ---
 
+Watch the recording on livecoding.tv [here](https://www.livecoding.tv/video/mikedoescode-owin-katana-whaaaaaa/)  
+
+Stream Type - MikeDoesCode  
+Music - The Jeffrey (Bit o' this, bit o' that)   
+Mood - Sunday Special (slightly hungover)  
+Target - Smash Presence and Katana together until they fit.  
+
 Sometimes you just need a few days off, I've been burning it pretty hot both at work and on this project and if I keep pushing like that I'll hit the dreaded burnout...
 
 So back with some fresh ideas after my last stream sent me on a journey of exploration around OWIN and Katana after taking a bit of a detour through Microsofts exquisitely named ASP .Net 5 MVC 6 which is still in beta and has fully embraced vNext so from what I can work out I need new differently compiled versions of pretty much *everything* right? Maybe I'm wrong here, but I couldn't figure out how to properly reference the Orleans libraries in a way that seemed to follow the existing idioms expressed in the examples. There's also an Orleans.vNext.sln file in the orleans source code... and it builds... but I have no idea what to do with it from here, do I need to host it in my own NuGet repo and publish it so my deployed contained apps can download their dependencies!? I honestly have no idea right now and the documentation seems scant so I'm back on the side of .Net that currently makes sense to me. I've grabbed the Katana projects OWIN implementation and had a play with the notion of "Middleware" which is basically a new much fancier and cleaner way to be an HttpModule, it does feel like it'll make creating this api a lot easier, but there's still a lot of gaps to be filled.
