@@ -19,19 +19,35 @@ Back when I was blitzing through the early architecture there was a limitation I
 
 So with the last stream being extremely talk focused, I really wanted to get something done, I blitzed through the refactor over about 20 minutes with some fun breaks thanks to cortana and the now growing group of awesome regulars, but I got somewhat held up with a few unit test failures. I knew there'd be unit test failures with a refactor like this, but I didn't try and work out what would fail and where, I internally (or possibly actually) shouted "TO HELL WITH IT!" and went for it... I made my changes, clicked play on my unit test runner and awaited the carnage...  
 
+
+
 ...  
+
+
 
 ... (I promise I won't use ellipses anymore)
 
+
+
 ...
+
+
 
 ... (Ok, just a couple more...)
 
+
+
 ...
+
+
 
 ... (This is how it feels waiting for a build... but it's only been like 3 seconds)
 
+
+
 ...
+
+
 
 I'd broken like, a couple of annoying things... and I'll probably be able to use the changes to update a blog post I've been writing over the past week on decoupling code for unit testing with an actual example from my code base instead of the *codem ipsum* type examples about Foo and Bar that are in there right now. I needed a factory for creating the Ownership object, and of course I knew that going in, but since this was a refactoring stream, I figured why the hell not add a bit of known test refactoring that everyone has to do from time to time. The rest of the stream was basically me tearing my hair out doing deeper mock implementations because I think I'm stretching what Moq was designed for when it comes to the TPL. I mean Moq is totally capable of working as it is intended, but I really want to do some strict mock testing and that isn't really Moqs primary intention... so yeah, time for more of our own mock implementations, but it's not in too bad shape right now.
 
