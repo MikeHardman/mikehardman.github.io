@@ -7,7 +7,7 @@ relative_permalinks: true
 # Setup
 title:               '@MikeDoesCode'
 tagline:             Coder, Streamer, Blogger, Dreamer...
-url:                 http://mikehardman.github.io
+url:                 http://www.mikedoescode.com
 paginate:            1
 baseurl:             ""
 
@@ -23,6 +23,7 @@ pages_list:
   Archive:          '/archive'
   Feed:             '/atom.xml'
   Discussion:       '/discussion'
+  Faq:              '/faq'
   
 # About/contact
 author:
