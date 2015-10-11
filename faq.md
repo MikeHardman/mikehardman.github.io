@@ -11,6 +11,8 @@ title: Frequently Asked Questions
 
 4. What's Orleans? - Orleans is an actor based framework that Microsoft recently open sourced.  
 
+5. How do I learn this? - To quote Shia "JUST DO IT!" get an IDE down, pick a basic starter project "a todo list, an address book, a dvd inventory system... ANYTHING", make it easy and basic, then make it start saving things to disk, then to a databse, then to the cloud, then make it shiny, make it flash different colours... make it *do* things... That is how you learn code. 
+
 ... More to come!   
 
 Have questions or suggestions? [ask me on Twitter](https://twitter.com/MikeDoesCode).
