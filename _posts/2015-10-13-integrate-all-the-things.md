@@ -27,7 +27,7 @@ Stream Stats:
  - View Count: 3207 (+612)    
  - Peak Viewers: 40 (+/-0) 
 
-Much love to everyone who tuned in and my special guests Alex and Eamonn!
+Much love to everyone who tuned in, see you all again soon!
 
 Mike
 
