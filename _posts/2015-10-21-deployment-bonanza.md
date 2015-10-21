@@ -3,7 +3,7 @@ title: Deployment Bonanza... and some Facebook stuff
 comments: True
 ---
 
-Watch the recording on livecoding.tv [here]()  
+Watch the recording on livecoding.tv [here](https://www.livecoding.tv/video/mikedoescode-deployment-time/)  
 
 Stream Type - MikeDoesCode   
 Music - Mostly Synthwave   
