@@ -13,6 +13,10 @@ title: Frequently Asked Questions
 
 5. How do I learn this? - To quote Shia "JUST DO IT!" get an IDE down, pick a basic starter project "a todo list, an address book, a dvd inventory system... ANYTHING", make it easy and basic, then make it start saving things to disk, then to a databse, then to the cloud, then make it shiny, make it flash different colours... make it *do* things... That is how you learn code. 
 
+6. F#?? - I'm a huge fan of F# and functional programming in general, had the Orleans framework been compatible with F# and the TPL the way it is implemented here then this middle tier would have been an F# 
+
+7. 
+
 ... More to come!   
 
 Have questions or suggestions? [ask me on Twitter](https://twitter.com/MikeDoesCode).
