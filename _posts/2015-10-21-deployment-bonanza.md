@@ -1,5 +1,6 @@
 ---
 title: Deployment Bonanza... and some Facebook stuff
+layout: post
 comments: True
 ---
 
