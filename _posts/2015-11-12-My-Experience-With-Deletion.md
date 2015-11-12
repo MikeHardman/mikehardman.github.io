@@ -1,5 +1,5 @@
 ---
-title: My Experience with Deletion and a Site that Struggles to Find Itself and Grow Organically
+title: My Experience with Deletion...
 layout: post
 comments: True
 ---
