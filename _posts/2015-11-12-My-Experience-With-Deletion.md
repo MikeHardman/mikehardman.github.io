@@ -4,11 +4,13 @@ layout: post
 comments: True
 ---
 
+*Update* moments after tweeting about this... my account has re-appeared! Like magic...
+
 So this post isn't following on in the usual format, this post is coming from the heart! I've never had a reasonable or decent response to any of either my messages or emails to livecoding support or drmjg... so here's a public letter.
 
 TLDR: Livecoding.tv strikes again, and deleted my account for streaming to both twitch and livecoding.tv. I'd really like to see the first 5 weeks of progress on my project, someone else might too?
 
-Live on stream tonight my account was deleted from Livecoding.tv with no warning, and with it goes 5 weeks of content documenting the early days creating my new product. Go and look -> [www.livecoding.tv/mikehardman](www.livecoding.tv/mikehardman) and go and check back on all my blog post links to videos... 
+Live on stream tonight my account was deleted from Livecoding.tv with no warning, and with it goes 5 weeks of content documenting the early days creating my new product. Go and look -> [www.livecoding.tv/mikehardman](http://www.livecoding.tv/mikehardman) and go and check back on all my blog post links to videos... 
 
 To give a little bit of backstory here, I found out about livecoding.tv thanks to HackerNews, I've been a software developer for nearly half my life, and when you spend such a large part of your life in those circles, you'll catch onto some of the culture. Well hacker news is a big part of that culture for me, it's one of my daily newspapers, it keeps me in a few good loops. Livecoding.tv looked perfect when I read about it on hn. I've been in industry for 15 years, I've spent every moment of that career learning and refining my craft and I finally had a project that looked like it might be interesting to do in a more public way. Maybe this was the start of me being able to give something back to the software development world, to give some advice and teachings that I've learned on my career path so far, and maybe make something cool of my own at the same time.
 
