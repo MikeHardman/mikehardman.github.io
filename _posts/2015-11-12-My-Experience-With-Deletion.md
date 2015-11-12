@@ -4,7 +4,7 @@ layout: post
 comments: True
 ---
 
-*Update* moments after tweeting about this... my account has re-appeared! Like magic...
+*Update* moments after tweeting about this... my account has re-appeared! Like magic... no such luck for  my compatriot devexer though.
 
 So this post isn't following on in the usual format, this post is coming from the heart! I've never had a reasonable or decent response to any of either my messages or emails to livecoding support or drmjg... so here's a public letter.
 
