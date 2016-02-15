@@ -4,8 +4,6 @@ layout: post
 comments: True
 ---
 
-Watch the recording on livecoding.tv [here](https://www.livecoding.tv/video/mikedoescode-knowledge-share-4/)  
-
 Stream Type - MikeDoesCode  
 Music - A Journey of Discovery   
 Mood - Perturbed   
