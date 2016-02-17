@@ -2,10 +2,12 @@
 title: Decoupling Code to Facilitate Unit Testing 
 layout: post
 comments: True
-draft: True
+draft: False
 ---
 
-THIS IS A DRAFT POST FOR COMMENTARY!
+So it's been a little while since I posted. I've been pretty busy at work and putting some extra hours in. I felt guilty for not being on stream for the short time I stopped, but I knew that if I'd kept trying to stream and write as well, I wasn't going to last the month. So I took a break from the stream and took a couple of days off work to recoup, all is well now!
+
+During the past couple of weeks a few topics have come up both at work and with other developers in my circle, people are still unsure about how to make things unit testable, the key to making all your code nice and testable is detailed below! Good Luck!
 
 Something that I've run into many times when working on existing apps is the ammount (or lack thereof) of decoupling shown. Historically it's been a bit of a pain to properly decouple your code and still keep it managable, but the variety of dependency injection frameworks that exist now leaves almost no excuse. Since I've been using AutoFac more than anything in my latest project, I'll be writing this with the AutoFac calls in mind, but the same features are available in most of the containers available.
 
